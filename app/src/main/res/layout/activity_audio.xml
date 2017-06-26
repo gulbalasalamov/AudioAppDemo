@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gulbalasalamov.audioappdemo.AudioActivity">
+
+
+    <Button
+        android:id="@+id/button_oynat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="oynatSes"
+        android:text="Oynat" />
+
+    <Button
+        android:id="@+id/button_kayit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_oynat"
+        android:layout_alignStart="@+id/button_oynat"
+        android:layout_centerVertical="true"
+        android:onClick="kayitSes"
+        android:text="Kayıt" />
+
+    <Button
+        android:id="@+id/button_dur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button_kayit"
+        android:layout_alignStart="@id/button_kayit"
+        android:layout_below="@+id/button_kayit"
+        android:layout_marginTop="100dp"
+        android:onClick="durSes"
+        android:text="Dur" />
+</RelativeLayout>
